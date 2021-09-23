@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Photo/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"  crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <title>Mus-Oy Farm.uz</title>
+</head>
+<body onload="Yangilikimg()">
+     <!-- header -->
+     <header>
+         <nav class="Navbar">
+             <div class="logo"><a href="#">
+                <img src="Photo/logo.png" width="80px">
+             </a>
+             </div>
+             <ul class="ul">
+                 <li class="close">
+                    <img onclick="remove()" src="Photo/x-icon.png" width="35px"> 
+                 </li>
+                 <li><a href="#">Bosh sahifa</a></li>
+                 <li><a href="#SectionOne">Biz haqimizda</a></li>
+                 <li><a href="#SectionTwo">Yangiliklar</a></li>
+                 <li><a href="#SectionThree">Mahsulotlar</a></li>
+                 <li><a href="#footer">Aloqa</a></li>
+                 <li class="language">
+                     <img src="Photo/uzb.png" width="35px">
+                     <button class="Uzb">Uzb</button>
+                     <div class="UzbRusEng">
+                       <a style="color: rgb(40, 71, 43);" href="Eng.html">Eng</a>
+                       <a style="color: rgb(40, 71, 43);" href="index.html">Uzb</a>
+                       <a style="color: rgb(40, 71, 43);" href="Rus.html">Rus</a>
+                     </div>
+                 </li>
+             </ul>
+             <div class="menu">
+                 <img onclick="add()" src="Photo/menu.png" width="40px">
+             </div>
+         </nav>
+         <div class="banner"></div>
+         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Photo/img1.bmp" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Photo/img2.jpg" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="Photo/img3.jpg" class="d-block w-100" >
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+     </header>
+     <!-- Saction1 -->
+     <section id="SectionOne">
+         <div class="Bizhaqimizda">
+             <h1>Biz haqimizda</h1>
+         </div>
+         <div class="Bizhaqidamalumot-img">
+             <div class="Bizhaqidamalumot">
+                 <h3 style="color: rgb(40, 71, 43);">Mus-Oy Farm</h1>
+                 <p><span style="font-size: 19px; font-weight: bold;
+                  color: #305569;">Mus-Oy Farm</span> kompaniyasi 2013 yilda tashkil etilgan bo’lib, O’zbekiston va boshqa MDH davlatlarining farmatsevtika bozoridagi jadal ravishda rivojlanayotgan kompaniyalardan biri hisoblanadi.</p>
+                 <p><span style="font-size: 19px; font-weight: bold;
+                  color: #305569;">Mus-Oy Farm</span> biologik faol qo’shimchalarni (BFQ) ishlab chiqarishda mahalliy farmatsevtika va nutritsevtika bozorining yetakchilaridan biri hisoblanib, iste’molchilarning sog’lig’iga va talablariga javob beradigan zamonaviy, sifatli va arzon ozuqaviy qo’shimchalarni yetkazib berishda faol hizmat ko’rsatib kelmoqda.</p>
+             </div>
+             <div class="Bizhaqidaimg"></div>
+         </div>
+     </section>
+     <!-- Section2 -->
+     <section id="SectionTwo">
+       <div class="opacity">
+         <div class="Yangiliklar">
+           <h1>Yangiliklar</h1>
+         </div>
+         <div class="Yangilikimg">
+           <img src="Photo/novinka.jpg" id="slideImg">
+         </div>
+       </div>
+     </section>
+     <!-- section3 -->
+     <section id="SectionThree">
+       <div class="SectionThreeContainer">
+          <div class="Mahsulotlar">
+            <h1>Mahsulotlar</h1>
+          </div>
+          <!-- <span class="span">&#139</span>
+          <span class="span">&#155</span> -->
+          <div class="Mahsulot-malumot">
+            <div class="sirop">
+              <div class="box">
+                <div class="box-img"><img src="Photo/fortic.jpg" width="90%"></div>
+                <div class="box-text">
+                  <p><strong>Nomi:</strong> Fortis</p>
+                  <p><strong>Narxi:</strong> 20000 so`m</p>
+                  <button onclick="fortic()">Batafsil</button>
+                </div>
+              </div>
+              <div class="fortic-container">
+                <div class="fortic">
+                  <p><strong>"VENTRICULE"</strong> 
+                    ozuqaga biologik faol qo`shimchani qo`llash bo`yicha yo`riqnoma<br>
+                    <strong>Chiqarilish shakli:</strong> sirop, 150 ml lik shisha. <br>
+                    <strong>Tarkibi (10 ml sirop uchun):</strong> moychechak gullari ekstrakti (flores matricariae) - 1 g, sabur barglari ekstrakti (flores aloe) - 2 g, qariqiz o`simligi ekstrakti (herbae arctium) - 0,5 g, o'lmas-o't gullari ekstrakti (flores helichrysae) - 0,5 g, yordamchi moddalar.M<br>
+                    <strong>"Ventrikul" biofaol komponentlarining xususiyatlari:</strong><br>
+                    <strong>Moychechak gullari ekstrakti -</strong> yallig'lanishga qarshi, sanchiq qo'llovchi, tinchlantiruvchi, antibakterial, shamollashga qarshi, tutkanoqqa qarshi, kon to`xtatuvchi, og`riq qoldiruvchi, safro haydovchi, biriktiruvchi ta`sirlarni namoyon qiladi.Shuningdek, moychechak biofaol moddalari adsorbsiyalovchi xossalarga ega bo`lib, organizmdan toksinlar va shlaklarni chiqarib yuboradi.<br>
+                    <strong> Sabur o`simligi ekstrakti -</strong> organizm ish faoliyatini hujayralar darajasida yahshilaydi. Sabur o`simligi biologik faol moddalarni faollashtirib, ularning ta'sirini kuchaytiradi. Qonni suyultiradi, qon aylanishini yaxshilaydi.Insult va qon aylanish tizimidagi boshqa muammolarni oldini olish va davolashda samara beradi.<br><strong>Qariqiz o`simligi ekstrakti - </strong>
+                    yaralar va zarohatlarni bitkazadi, yallig'lashni davolashda, oriqsizlantiradi, pehob haidovchi hususiyatni namoyon qiladi, oshqozon osti bezida fermentlar ishlab chiqarishni to'xtatadi. Zhigar, buyraklar, vaf pufagi ishlatilgan yahshilaydi, onni tozalaydi, zaxarli faoliyat va shlaklarni chikarib yuboradi, sotlar o'zlarini tez ishlatadilar.<br>
+                    <strong>O`lmas-o't gullari ekstrakti</strong>
+                     - safro xaydovchi, xolekinetik, xoleretik, yalliglanishga qarshi va antibakterial, sanchiq koldiruvchi va jarohatlarni davolovchi taassirlarga ega. Safro azhralishini ko'chatadi va o'z poufagi sharoitida yahshilaydi. Pt pufagi sphincterlarining silliq musullari va safro yllari bushashtiradi.<br>
+                     Qo'llashga doir ko'rsatmalar. “Ventricul” biolog faol kuchimchasini uyidagi hulotlarga ko'rsatishga tavsia etyladi.
+                       xoletsistit, safro azralishining kiyinlashuvi, gipertoniya;
+                       kamharakatlik va noto'g'ri ovqatlanish;
+                       osqzone osti bezi casalliklari (pankreatit, oshqozon osti bezi nekrozi);
+                       ovqat hazm blishing buzilishi (buzilish), ozuqa harakat qiladigan ichaklard yahshi surilishligi (malasorbtsiya);<br>
+                       ovqat hazm qilish tizimidagi kasalliklarning oqibatidagi meteorizm, qorin dam bulishi, korindagi oqriqlar va nokulayliklar, diareya, ich ketish;
+                       ichkilikbozlik va kashandalik oqibatida kelib chikkan ovqat hazim tizim tizimidagi kasalliklari;
+                       solom ovkatlanish tartibiga amal kilmaslik, oshqozon-ichak tizimlarida zaxarli moddalarning tuzilishi.<br>Allash usuli va tavsiya etiluvchi dozalari. Ichga qabul qilish uchun. 3 yoshdan 7 yoshgacha bulgan bolalarga 2,5 ml dan, 8 yoshdan 12 yoshgacha 5 ml dan, 12 yoshdan oshgan bolalar va kattalar uchun 10 ml dan sirop kabi 2-3 maxal ovatdan keyin.
+                      Qarshi ko'rsatmalar. mahsulot komponentlarini individual qabul qilish mumkin emas.
+                      Yaroqlilik muddati va saqlash sharoitlari: 2 yil. Toza va quruq sharoitda, 25S dan oshmagan haroratda, yorug'likdan himoyalangan joyda saqlanadi.<br>
+                      Mahsus ko'rsatmalar: Biologik faol kuchimcha - dori vositasi emas! Chiqariladi uchun retsept. Homiladordik vaqtida qo'llash uchun mutahassis bilan butlatatlashish zarur. Sirob qabul qilishdan avval yahshilab chayqatiladi. Bir shisha ko'pqo'g'i ochilgandan keyin salqin joyida saqlanadi.
+                      Ishlab chixaruvchi: "Mus-Oy Farm"
+                  </p>
+                  <button onclick="button1()" class="button2">Yopish</button>
+                </div>
+              </div>
+            </div>
+            <div class="sirop">
+              <div class="box">
+                <div class="box-img"><img src="Photo/Бон сироп1.jpg" width="90%"></div>
+                <div class="box-text">
+                  <p><strong>Nomi:</strong> Bon Kalsiy-D<sub>3</sub></p>
+                  <p><strong>Narxi:</strong> 20000 so`m</p>
+                  <button onclick="bon()">Batafsil</button>
+                </div>
+              </div>
+              <div class="bon-container">
+                <div class="bon">
+                  <p><strong>"VENTRICULE"</strong> 
+                    ozuqaga biologik faol qo`shimchani qo`llash bo`yicha yo`riqnoma<br>
+                    <strong>Chiqarilish shakli:</strong> sirop, 150 ml lik shisha. <br>
+                    <strong>Tarkibi (10 ml sirop uchun):</strong> moychechak gullari ekstrakti (flores matricariae) - 1 g, sabur barglari ekstrakti (flores aloe) - 2 g, qariqiz o`simligi ekstrakti (herbae arctium) - 0,5 g, o'lmas-o't gullari ekstrakti (flores helichrysae) - 0,5 g, yordamchi moddalar.M<br>
+                    <strong>"Ventrikul" biofaol komponentlarining xususiyatlari:</strong><br>
+                    <strong>Moychechak gullari ekstrakti -</strong> yallig'lanishga qarshi, sanchiq qo'llovchi, tinchlantiruvchi, antibakterial, shamollashga qarshi, tutkanoqqa qarshi, kon to`xtatuvchi, og`riq qoldiruvchi, safro haydovchi, biriktiruvchi ta`sirlarni namoyon qiladi.Shuningdek, moychechak biofaol moddalari adsorbsiyalovchi xossalarga ega bo`lib, organizmdan toksinlar va shlaklarni chiqarib yuboradi.<br>
+                    <strong> Sabur o`simligi ekstrakti -</strong> organizm ish faoliyatini hujayralar darajasida yahshilaydi. Sabur o`simligi biologik faol moddalarni faollashtirib, ularning ta'sirini kuchaytiradi. Qonni suyultiradi, qon aylanishini yaxshilaydi.Insult va qon aylanish tizimidagi boshqa muammolarni oldini olish va davolashda samara beradi.<br><strong>Qariqiz o`simligi ekstrakti - </strong>
+                    yaralar va zarohatlarni bitkazadi, yallig'lashni davolashda, oriqsizlantiradi, pehob haidovchi hususiyatni namoyon qiladi, oshqozon osti bezida fermentlar ishlab chiqarishni to'xtatadi. Zhigar, buyraklar, vaf pufagi ishlatilgan yahshilaydi, onni tozalaydi, zaxarli faoliyat va shlaklarni chikarib yuboradi, sotlar o'zlarini tez ishlatadilar.<br>
+                    <strong>O`lmas-o't gullari ekstrakti</strong>
+                     - safro xaydovchi, xolekinetik, xoleretik, yalliglanishga qarshi va antibakterial, sanchiq koldiruvchi va jarohatlarni davolovchi taassirlarga ega. Safro azhralishini ko'chatadi va o'z poufagi sharoitida yahshilaydi. Pt pufagi sphincterlarining silliq musullari va safro yllari bushashtiradi.<br>
+                     Qo'llashga doir ko'rsatmalar. “Ventricul” biolog faol kuchimchasini uyidagi hulotlarga ko'rsatishga tavsia etyladi.
+                       xoletsistit, safro azralishining kiyinlashuvi, gipertoniya;
+                       kamharakatlik va noto'g'ri ovqatlanish;
+                       osqzone osti bezi casalliklari (pankreatit, oshqozon osti bezi nekrozi);
+                       ovqat hazm blishing buzilishi (buzilish), ozuqa harakat qiladigan ichaklard yahshi surilishligi (malasorbtsiya);<br>
+                       ovqat hazm qilish tizimidagi kasalliklarning oqibatidagi meteorizm, qorin dam bulishi, korindagi oqriqlar va nokulayliklar, diareya, ich ketish;
+                       ichkilikbozlik va kashandalik oqibatida kelib chikkan ovqat hazim tizim tizimidagi kasalliklari;
+                       solom ovkatlanish tartibiga amal kilmaslik, oshqozon-ichak tizimlarida zaxarli moddalarning tuzilishi.<br>Allash usuli va tavsiya etiluvchi dozalari. Ichga qabul qilish uchun. 3 yoshdan 7 yoshgacha bulgan bolalarga 2,5 ml dan, 8 yoshdan 12 yoshgacha 5 ml dan, 12 yoshdan oshgan bolalar va kattalar uchun 10 ml dan sirop kabi 2-3 maxal ovatdan keyin.
+                      Qarshi ko'rsatmalar. mahsulot komponentlarini individual qabul qilish mumkin emas.
+                      Yaroqlilik muddati va saqlash sharoitlari: 2 yil. Toza va quruq sharoitda, 25S dan oshmagan haroratda, yorug'likdan himoyalangan joyda saqlanadi.<br>
+                      Mahsus ko'rsatmalar: Biologik faol kuchimcha - dori vositasi emas! Chiqariladi uchun retsept. Homiladordik vaqtida qo'llash uchun mutahassis bilan butlatatlashish zarur. Sirob qabul qilishdan avval yahshilab chayqatiladi. Bir shisha ko'pqo'g'i ochilgandan keyin salqin joyida saqlanadi.
+                      Ishlab chixaruvchi: "Mus-Oy Farm"
+                  </p>
+                  <button onclick="button2()" class="button2">Yopish</button>
+                </div>
+              </div>
+            </div>
+            <div class="sirop">
+              <div class="box">
+                <div class="box-img"><img src="Photo/ventricul - cirop1.jpg" width="90%"></div>
+                <div class="box-text">
+                  <p><strong>Nomi:</strong> Ventrikul</p>
+                  <p><strong>Narxi:</strong> 20000 so`m</p>
+                  <button onclick="ventrikul()">Batafsil</button>
+                </div>
+              </div>
+              <div class="ventrikul-container">
+                <div class="ventrikul">
+                  <p><strong>"VENTRICULE"</strong> 
+                    ozuqaga biologik faol qo`shimchani qo`llash bo`yicha yo`riqnoma<br>
+                    <strong>Chiqarilish shakli:</strong> sirop, 150 ml lik shisha. <br>
+                    <strong>Tarkibi (10 ml sirop uchun):</strong> moychechak gullari ekstrakti (flores matricariae) - 1 g, sabur barglari ekstrakti (flores aloe) - 2 g, qariqiz o`simligi ekstrakti (herbae arctium) - 0,5 g, o'lmas-o't gullari ekstrakti (flores helichrysae) - 0,5 g, yordamchi moddalar.M<br>
+                    <strong>"Ventrikul" biofaol komponentlarining xususiyatlari:</strong><br>
+                    <strong>Moychechak gullari ekstrakti -</strong> yallig'lanishga qarshi, sanchiq qo'llovchi, tinchlantiruvchi, antibakterial, shamollashga qarshi, tutkanoqqa qarshi, kon to`xtatuvchi, og`riq qoldiruvchi, safro haydovchi, biriktiruvchi ta`sirlarni namoyon qiladi.Shuningdek, moychechak biofaol moddalari adsorbsiyalovchi xossalarga ega bo`lib, organizmdan toksinlar va shlaklarni chiqarib yuboradi.<br>
+                    <strong> Sabur o`simligi ekstrakti -</strong> organizm ish faoliyatini hujayralar darajasida yahshilaydi. Sabur o`simligi biologik faol moddalarni faollashtirib, ularning ta'sirini kuchaytiradi. Qonni suyultiradi, qon aylanishini yaxshilaydi.Insult va qon aylanish tizimidagi boshqa muammolarni oldini olish va davolashda samara beradi.<br><strong>Qariqiz o`simligi ekstrakti - </strong>
+                    yaralar va zarohatlarni bitkazadi, yallig'lashni davolashda, oriqsizlantiradi, pehob haidovchi hususiyatni namoyon qiladi, oshqozon osti bezida fermentlar ishlab chiqarishni to'xtatadi. Zhigar, buyraklar, vaf pufagi ishlatilgan yahshilaydi, onni tozalaydi, zaxarli faoliyat va shlaklarni chikarib yuboradi, sotlar o'zlarini tez ishlatadilar.<br>
+                    <strong>O`lmas-o't gullari ekstrakti</strong>
+                     - safro xaydovchi, xolekinetik, xoleretik, yalliglanishga qarshi va antibakterial, sanchiq koldiruvchi va jarohatlarni davolovchi taassirlarga ega. Safro azhralishini ko'chatadi va o'z poufagi sharoitida yahshilaydi. Pt pufagi sphincterlarining silliq musullari va safro yllari bushashtiradi.<br>
+                     Qo'llashga doir ko'rsatmalar. “Ventricul” biolog faol kuchimchasini uyidagi hulotlarga ko'rsatishga tavsia etyladi.
+                       xoletsistit, safro azralishining kiyinlashuvi, gipertoniya;
+                       kamharakatlik va noto'g'ri ovqatlanish;
+                       osqzone osti bezi casalliklari (pankreatit, oshqozon osti bezi nekrozi);
+                       ovqat hazm blishing buzilishi (buzilish), ozuqa harakat qiladigan ichaklard yahshi surilishligi (malasorbtsiya);<br>
+                       ovqat hazm qilish tizimidagi kasalliklarning oqibatidagi meteorizm, qorin dam bulishi, korindagi oqriqlar va nokulayliklar, diareya, ich ketish;
+                       ichkilikbozlik va kashandalik oqibatida kelib chikkan ovqat hazim tizim tizimidagi kasalliklari;
+                       solom ovkatlanish tartibiga amal kilmaslik, oshqozon-ichak tizimlarida zaxarli moddalarning tuzilishi.<br>Allash usuli va tavsiya etiluvchi dozalari. Ichga qabul qilish uchun. 3 yoshdan 7 yoshgacha bulgan bolalarga 2,5 ml dan, 8 yoshdan 12 yoshgacha 5 ml dan, 12 yoshdan oshgan bolalar va kattalar uchun 10 ml dan sirop kabi 2-3 maxal ovatdan keyin.
+                      Qarshi ko'rsatmalar. mahsulot komponentlarini individual qabul qilish mumkin emas.
+                      Yaroqlilik muddati va saqlash sharoitlari: 2 yil. Toza va quruq sharoitda, 25S dan oshmagan haroratda, yorug'likdan himoyalangan joyda saqlanadi.<br>
+                      Mahsus ko'rsatmalar: Biologik faol kuchimcha - dori vositasi emas! Chiqariladi uchun retsept. Homiladordik vaqtida qo'llash uchun mutahassis bilan butlatatlashish zarur. Sirob qabul qilishdan avval yahshilab chayqatiladi. Bir shisha ko'pqo'g'i ochilgandan keyin salqin joyida saqlanadi.
+                      Ishlab chixaruvchi: "Mus-Oy Farm"
+                  </p>
+                  <button onclick="button3()" class="button2">Yopish</button>
+                </div>
+              </div>
+            </div>
+            <div class="sirop">
+              <div class="box">
+                <div class="box-img"><img src="Photo/pastula.jpg" width="90%"></div>
+                <div class="box-text">
+                  <p><strong>Nomi:</strong> Pastula</p>
+                  <p><strong>Narxi:</strong> 20000 so`m</p>
+                  <button onclick="pastula()">Batafsil</button>
+                </div>
+              </div>
+              <div class="pastula-container">
+                <div class="pastula">
+                  <p><strong>"VENTRICULE"</strong> 
+                    ozuqaga biologik faol qo`shimchani qo`llash bo`yicha yo`riqnoma<br>
+                    <strong>Chiqarilish shakli:</strong> sirop, 150 ml lik shisha. <br>
+                    <strong>Tarkibi (10 ml sirop uchun):</strong> moychechak gullari ekstrakti (flores matricariae) - 1 g, sabur barglari ekstrakti (flores aloe) - 2 g, qariqiz o`simligi ekstrakti (herbae arctium) - 0,5 g, o'lmas-o't gullari ekstrakti (flores helichrysae) - 0,5 g, yordamchi moddalar.M<br>
+                    <strong>"Ventrikul" biofaol komponentlarining xususiyatlari:</strong><br>
+                    <strong>Moychechak gullari ekstrakti -</strong> yallig'lanishga qarshi, sanchiq qo'llovchi, tinchlantiruvchi, antibakterial, shamollashga qarshi, tutkanoqqa qarshi, kon to`xtatuvchi, og`riq qoldiruvchi, safro haydovchi, biriktiruvchi ta`sirlarni namoyon qiladi.Shuningdek, moychechak biofaol moddalari adsorbsiyalovchi xossalarga ega bo`lib, organizmdan toksinlar va shlaklarni chiqarib yuboradi.<br>
+                    <strong> Sabur o`simligi ekstrakti -</strong> organizm ish faoliyatini hujayralar darajasida yahshilaydi. Sabur o`simligi biologik faol moddalarni faollashtirib, ularning ta'sirini kuchaytiradi. Qonni suyultiradi, qon aylanishini yaxshilaydi.Insult va qon aylanish tizimidagi boshqa muammolarni oldini olish va davolashda samara beradi.<br><strong>Qariqiz o`simligi ekstrakti - </strong>
+                    yaralar va zarohatlarni bitkazadi, yallig'lashni davolashda, oriqsizlantiradi, pehob haidovchi hususiyatni namoyon qiladi, oshqozon osti bezida fermentlar ishlab chiqarishni to'xtatadi. Zhigar, buyraklar, vaf pufagi ishlatilgan yahshilaydi, onni tozalaydi, zaxarli faoliyat va shlaklarni chikarib yuboradi, sotlar o'zlarini tez ishlatadilar.<br>
+                    <strong>O`lmas-o't gullari ekstrakti</strong>
+                     - safro xaydovchi, xolekinetik, xoleretik, yalliglanishga qarshi va antibakterial, sanchiq koldiruvchi va jarohatlarni davolovchi taassirlarga ega. Safro azhralishini ko'chatadi va o'z poufagi sharoitida yahshilaydi. Pt pufagi sphincterlarining silliq musullari va safro yllari bushashtiradi.<br>
+                     Qo'llashga doir ko'rsatmalar. “Ventricul” biolog faol kuchimchasini uyidagi hulotlarga ko'rsatishga tavsia etyladi.
+                       xoletsistit, safro azralishining kiyinlashuvi, gipertoniya;
+                       kamharakatlik va noto'g'ri ovqatlanish;
+                       osqzone osti bezi casalliklari (pankreatit, oshqozon osti bezi nekrozi);
+                       ovqat hazm blishing buzilishi (buzilish), ozuqa harakat qiladigan ichaklard yahshi surilishligi (malasorbtsiya);<br>
+                       ovqat hazm qilish tizimidagi kasalliklarning oqibatidagi meteorizm, qorin dam bulishi, korindagi oqriqlar va nokulayliklar, diareya, ich ketish;
+                       ichkilikbozlik va kashandalik oqibatida kelib chikkan ovqat hazim tizim tizimidagi kasalliklari;
+                       solom ovkatlanish tartibiga amal kilmaslik, oshqozon-ichak tizimlarida zaxarli moddalarning tuzilishi.<br>Allash usuli va tavsiya etiluvchi dozalari. Ichga qabul qilish uchun. 3 yoshdan 7 yoshgacha bulgan bolalarga 2,5 ml dan, 8 yoshdan 12 yoshgacha 5 ml dan, 12 yoshdan oshgan bolalar va kattalar uchun 10 ml dan sirop kabi 2-3 maxal ovatdan keyin.
+                      Qarshi ko'rsatmalar. mahsulot komponentlarini individual qabul qilish mumkin emas.
+                      Yaroqlilik muddati va saqlash sharoitlari: 2 yil. Toza va quruq sharoitda, 25S dan oshmagan haroratda, yorug'likdan himoyalangan joyda saqlanadi.<br>
+                      Mahsus ko'rsatmalar: Biologik faol kuchimcha - dori vositasi emas! Chiqariladi uchun retsept. Homiladordik vaqtida qo'llash uchun mutahassis bilan butlatatlashish zarur. Sirob qabul qilishdan avval yahshilab chayqatiladi. Bir shisha ko'pqo'g'i ochilgandan keyin salqin joyida saqlanadi.
+                      Ishlab chixaruvchi: "Mus-Oy Farm"
+                  </p>
+                  <button onclick="button4()" class="button2">Yopish</button>
+                </div>
+              </div>
+            </div>
+            <div class="sirop">
+              <div class="box">
+                <div class="box-img"><img src="Photo/Гойтер сироп1.jpg" width="90%"></div>
+                <div class="box-text">
+                  <p><strong>Nomi:</strong> Gayter</p>
+                  <p><strong>Narxi:</strong> 20000 so`m</p>
+                  <button onclick="gayter()">Batafsil</button>
+                </div>
+              </div>
+              <div class="gayter-container">
+                <div class="gayter">
+                  <p><strong>"VENTRICULE"</strong> 
+                    ozuqaga biologik faol qo`shimchani qo`llash bo`yicha yo`riqnoma<br>
+                    <strong>Chiqarilish shakli:</strong> sirop, 150 ml lik shisha. <br>
+                    <strong>Tarkibi (10 ml sirop uchun):</strong> moychechak gullari ekstrakti (flores matricariae) - 1 g, sabur barglari ekstrakti (flores aloe) - 2 g, qariqiz o`simligi ekstrakti (herbae arctium) - 0,5 g, o'lmas-o't gullari ekstrakti (flores helichrysae) - 0,5 g, yordamchi moddalar.M<br>
+                    <strong>"Ventrikul" biofaol komponentlarining xususiyatlari:</strong><br>
+                    <strong>Moychechak gullari ekstrakti -</strong> yallig'lanishga qarshi, sanchiq qo'llovchi, tinchlantiruvchi, antibakterial, shamollashga qarshi, tutkanoqqa qarshi, kon to`xtatuvchi, og`riq qoldiruvchi, safro haydovchi, biriktiruvchi ta`sirlarni namoyon qiladi.Shuningdek, moychechak biofaol moddalari adsorbsiyalovchi xossalarga ega bo`lib, organizmdan toksinlar va shlaklarni chiqarib yuboradi.<br>
+                    <strong> Sabur o`simligi ekstrakti -</strong> organizm ish faoliyatini hujayralar darajasida yahshilaydi. Sabur o`simligi biologik faol moddalarni faollashtirib, ularning ta'sirini kuchaytiradi. Qonni suyultiradi, qon aylanishini yaxshilaydi.Insult va qon aylanish tizimidagi boshqa muammolarni oldini olish va davolashda samara beradi.<br><strong>Qariqiz o`simligi ekstrakti - </strong>
+                    yaralar va zarohatlarni bitkazadi, yallig'lashni davolashda, oriqsizlantiradi, pehob haidovchi hususiyatni namoyon qiladi, oshqozon osti bezida fermentlar ishlab chiqarishni to'xtatadi. Zhigar, buyraklar, vaf pufagi ishlatilgan yahshilaydi, onni tozalaydi, zaxarli faoliyat va shlaklarni chikarib yuboradi, sotlar o'zlarini tez ishlatadilar.<br>
+                    <strong>O`lmas-o't gullari ekstrakti</strong>
+                     - safro xaydovchi, xolekinetik, xoleretik, yalliglanishga qarshi va antibakterial, sanchiq koldiruvchi va jarohatlarni davolovchi taassirlarga ega. Safro azhralishini ko'chatadi va o'z poufagi sharoitida yahshilaydi. Pt pufagi sphincterlarining silliq musullari va safro yllari bushashtiradi.<br>
+                     Qo'llashga doir ko'rsatmalar. “Ventricul” biolog faol kuchimchasini uyidagi hulotlarga ko'rsatishga tavsia etyladi.
+                       xoletsistit, safro azralishining kiyinlashuvi, gipertoniya;
+                       kamharakatlik va noto'g'ri ovqatlanish;
+                       osqzone osti bezi casalliklari (pankreatit, oshqozon osti bezi nekrozi);
+                       ovqat hazm blishing buzilishi (buzilish), ozuqa harakat qiladigan ichaklard yahshi surilishligi (malasorbtsiya);<br>
+                       ovqat hazm qilish tizimidagi kasalliklarning oqibatidagi meteorizm, qorin dam bulishi, korindagi oqriqlar va nokulayliklar, diareya, ich ketish;
+                       ichkilikbozlik va kashandalik oqibatida kelib chikkan ovqat hazim tizim tizimidagi kasalliklari;
+                       solom ovkatlanish tartibiga amal kilmaslik, oshqozon-ichak tizimlarida zaxarli moddalarning tuzilishi.<br>Allash usuli va tavsiya etiluvchi dozalari. Ichga qabul qilish uchun. 3 yoshdan 7 yoshgacha bulgan bolalarga 2,5 ml dan, 8 yoshdan 12 yoshgacha 5 ml dan, 12 yoshdan oshgan bolalar va kattalar uchun 10 ml dan sirop kabi 2-3 maxal ovatdan keyin.
+                      Qarshi ko'rsatmalar. mahsulot komponentlarini individual qabul qilish mumkin emas.
+                      Yaroqlilik muddati va saqlash sharoitlari: 2 yil. Toza va quruq sharoitda, 25S dan oshmagan haroratda, yorug'likdan himoyalangan joyda saqlanadi.<br>
+                      Mahsus ko'rsatmalar: Biologik faol kuchimcha - dori vositasi emas! Chiqariladi uchun retsept. Homiladordik vaqtida qo'llash uchun mutahassis bilan butlatatlashish zarur. Sirob qabul qilishdan avval yahshilab chayqatiladi. Bir shisha ko'pqo'g'i ochilgandan keyin salqin joyida saqlanadi.
+                      Ishlab chixaruvchi: "Mus-Oy Farm"
+                  </p>
+                  <button onclick="button5()" class="button2">Yopish</button>
+                </div>
+              </div>
+            </div>
+            <div class="sirop">
+              <div class="box">
+                <div class="box-img"><img src="Photo/Нейротроп сироп1.jpg" width="90%"></div>
+                <div class="box-text">
+                  <p><strong>Nomi:</strong> Neyrotrop</p>
+                  <p><strong>Narxi:</strong> 20000 so`m</p>
+                  <button onclick="neyrotrop()">Batafsil</button>
+                </div>
+              </div>
+              <div class="neyrotrop-container">
+                <div class="neyrotrop">
+                  <p><strong>"VENTRICULE"</strong> 
+                    ozuqaga biologik faol qo`shimchani qo`llash bo`yicha yo`riqnoma<br>
+                    <strong>Chiqarilish shakli:</strong> sirop, 150 ml lik shisha. <br>
+                    <strong>Tarkibi (10 ml sirop uchun):</strong> moychechak gullari ekstrakti (flores matricariae) - 1 g, sabur barglari ekstrakti (flores aloe) - 2 g, qariqiz o`simligi ekstrakti (herbae arctium) - 0,5 g, o'lmas-o't gullari ekstrakti (flores helichrysae) - 0,5 g, yordamchi moddalar.M<br>
+                    <strong>"Ventrikul" biofaol komponentlarining xususiyatlari:</strong><br>
+                    <strong>Moychechak gullari ekstrakti -</strong> yallig'lanishga qarshi, sanchiq qo'llovchi, tinchlantiruvchi, antibakterial, shamollashga qarshi, tutkanoqqa qarshi, kon to`xtatuvchi, og`riq qoldiruvchi, safro haydovchi, biriktiruvchi ta`sirlarni namoyon qiladi.Shuningdek, moychechak biofaol moddalari adsorbsiyalovchi xossalarga ega bo`lib, organizmdan toksinlar va shlaklarni chiqarib yuboradi.<br>
+                    <strong> Sabur o`simligi ekstrakti -</strong> organizm ish faoliyatini hujayralar darajasida yahshilaydi. Sabur o`simligi biologik faol moddalarni faollashtirib, ularning ta'sirini kuchaytiradi. Qonni suyultiradi, qon aylanishini yaxshilaydi.Insult va qon aylanish tizimidagi boshqa muammolarni oldini olish va davolashda samara beradi.<br><strong>Qariqiz o`simligi ekstrakti - </strong>
+                    yaralar va zarohatlarni bitkazadi, yallig'lashni davolashda, oriqsizlantiradi, pehob haidovchi hususiyatni namoyon qiladi, oshqozon osti bezida fermentlar ishlab chiqarishni to'xtatadi. Zhigar, buyraklar, vaf pufagi ishlatilgan yahshilaydi, onni tozalaydi, zaxarli faoliyat va shlaklarni chikarib yuboradi, sotlar o'zlarini tez ishlatadilar.<br>
+                    <strong>O`lmas-o't gullari ekstrakti</strong>
+                     - safro xaydovchi, xolekinetik, xoleretik, yalliglanishga qarshi va antibakterial, sanchiq koldiruvchi va jarohatlarni davolovchi taassirlarga ega. Safro azhralishini ko'chatadi va o'z poufagi sharoitida yahshilaydi. Pt pufagi sphincterlarining silliq musullari va safro yllari bushashtiradi.<br>
+                     Qo'llashga doir ko'rsatmalar. “Ventricul” biolog faol kuchimchasini uyidagi hulotlarga ko'rsatishga tavsia etyladi.
+                       xoletsistit, safro azralishining kiyinlashuvi, gipertoniya;
+                       kamharakatlik va noto'g'ri ovqatlanish;
+                       osqzone osti bezi casalliklari (pankreatit, oshqozon osti bezi nekrozi);
+                       ovqat hazm blishing buzilishi (buzilish), ozuqa harakat qiladigan ichaklard yahshi surilishligi (malasorbtsiya);<br>
+                       ovqat hazm qilish tizimidagi kasalliklarning oqibatidagi meteorizm, qorin dam bulishi, korindagi oqriqlar va nokulayliklar, diareya, ich ketish;
+                       ichkilikbozlik va kashandalik oqibatida kelib chikkan ovqat hazim tizim tizimidagi kasalliklari;
+                       solom ovkatlanish tartibiga amal kilmaslik, oshqozon-ichak tizimlarida zaxarli moddalarning tuzilishi.<br>Allash usuli va tavsiya etiluvchi dozalari. Ichga qabul qilish uchun. 3 yoshdan 7 yoshgacha bulgan bolalarga 2,5 ml dan, 8 yoshdan 12 yoshgacha 5 ml dan, 12 yoshdan oshgan bolalar va kattalar uchun 10 ml dan sirop kabi 2-3 maxal ovatdan keyin.
+                      Qarshi ko'rsatmalar. mahsulot komponentlarini individual qabul qilish mumkin emas.
+                      Yaroqlilik muddati va saqlash sharoitlari: 2 yil. Toza va quruq sharoitda, 25S dan oshmagan haroratda, yorug'likdan himoyalangan joyda saqlanadi.<br>
+                      Mahsus ko'rsatmalar: Biologik faol kuchimcha - dori vositasi emas! Chiqariladi uchun retsept. Homiladordik vaqtida qo'llash uchun mutahassis bilan butlatatlashish zarur. Sirob qabul qilishdan avval yahshilab chayqatiladi. Bir shisha ko'pqo'g'i ochilgandan keyin salqin joyida saqlanadi.
+                      Ishlab chixaruvchi: "Mus-Oy Farm"
+                  </p>
+                  <button onclick="button6()" class="button2">Yopish</button>
+                </div>
+              </div>
+            </div>
+            <div class="sirop">
+              <div class="box">
+                <div class="box-img"><img src="Photo/hilorem.jpg" width="90%"></div>
+                <div class="box-text">
+                  <p><strong>Nomi:</strong> Hilorem</p>
+                  <p><strong>Narxi:</strong> 20000 so`m</p>
+                  <button onclick="hilorem()">Batafsil</button>
+                </div>
+              </div>
+              <div class="hilorem-container">
+                <div class="hilorem">
+                  <p><strong>"VENTRICULE"</strong> 
+                    ozuqaga biologik faol qo`shimchani qo`llash bo`yicha yo`riqnoma<br>
+                    <strong>Chiqarilish shakli:</strong> sirop, 150 ml lik shisha. <br>
+                    <strong>Tarkibi (10 ml sirop uchun):</strong> moychechak gullari ekstrakti (flores matricariae) - 1 g, sabur barglari ekstrakti (flores aloe) - 2 g, qariqiz o`simligi ekstrakti (herbae arctium) - 0,5 g, o'lmas-o't gullari ekstrakti (flores helichrysae) - 0,5 g, yordamchi moddalar.M<br>
+                    <strong>"Ventrikul" biofaol komponentlarining xususiyatlari:</strong><br>
+                    <strong>Moychechak gullari ekstrakti -</strong> yallig'lanishga qarshi, sanchiq qo'llovchi, tinchlantiruvchi, antibakterial, shamollashga qarshi, tutkanoqqa qarshi, kon to`xtatuvchi, og`riq qoldiruvchi, safro haydovchi, biriktiruvchi ta`sirlarni namoyon qiladi.Shuningdek, moychechak biofaol moddalari adsorbsiyalovchi xossalarga ega bo`lib, organizmdan toksinlar va shlaklarni chiqarib yuboradi.<br>
+                    <strong> Sabur o`simligi ekstrakti -</strong> organizm ish faoliyatini hujayralar darajasida yahshilaydi. Sabur o`simligi biologik faol moddalarni faollashtirib, ularning ta'sirini kuchaytiradi. Qonni suyultiradi, qon aylanishini yaxshilaydi.Insult va qon aylanish tizimidagi boshqa muammolarni oldini olish va davolashda samara beradi.<br><strong>Qariqiz o`simligi ekstrakti - </strong>
+                    yaralar va zarohatlarni bitkazadi, yallig'lashni davolashda, oriqsizlantiradi, pehob haidovchi hususiyatni namoyon qiladi, oshqozon osti bezida fermentlar ishlab chiqarishni to'xtatadi. Zhigar, buyraklar, vaf pufagi ishlatilgan yahshilaydi, onni tozalaydi, zaxarli faoliyat va shlaklarni chikarib yuboradi, sotlar o'zlarini tez ishlatadilar.<br>
+                    <strong>O`lmas-o't gullari ekstrakti</strong>
+                     - safro xaydovchi, xolekinetik, xoleretik, yalliglanishga qarshi va antibakterial, sanchiq koldiruvchi va jarohatlarni davolovchi taassirlarga ega. Safro azhralishini ko'chatadi va o'z poufagi sharoitida yahshilaydi. Pt pufagi sphincterlarining silliq musullari va safro yllari bushashtiradi.<br>
+                     Qo'llashga doir ko'rsatmalar. “Ventricul” biolog faol kuchimchasini uyidagi hulotlarga ko'rsatishga tavsia etyladi.
+                       xoletsistit, safro azralishining kiyinlashuvi, gipertoniya;
+                       kamharakatlik va noto'g'ri ovqatlanish;
+                       osqzone osti bezi casalliklari (pankreatit, oshqozon osti bezi nekrozi);
+                       ovqat hazm blishing buzilishi (buzilish), ozuqa harakat qiladigan ichaklard yahshi surilishligi (malasorbtsiya);<br>
+                       ovqat hazm qilish tizimidagi kasalliklarning oqibatidagi meteorizm, qorin dam bulishi, korindagi oqriqlar va nokulayliklar, diareya, ich ketish;
+                       ichkilikbozlik va kashandalik oqibatida kelib chikkan ovqat hazim tizim tizimidagi kasalliklari;
+                       solom ovkatlanish tartibiga amal kilmaslik, oshqozon-ichak tizimlarida zaxarli moddalarning tuzilishi.<br>Allash usuli va tavsiya etiluvchi dozalari. Ichga qabul qilish uchun. 3 yoshdan 7 yoshgacha bulgan bolalarga 2,5 ml dan, 8 yoshdan 12 yoshgacha 5 ml dan, 12 yoshdan oshgan bolalar va kattalar uchun 10 ml dan sirop kabi 2-3 maxal ovatdan keyin.
+                      Qarshi ko'rsatmalar. mahsulot komponentlarini individual qabul qilish mumkin emas.
+                      Yaroqlilik muddati va saqlash sharoitlari: 2 yil. Toza va quruq sharoitda, 25S dan oshmagan haroratda, yorug'likdan himoyalangan joyda saqlanadi.<br>
+                      Mahsus ko'rsatmalar: Biologik faol kuchimcha - dori vositasi emas! Chiqariladi uchun retsept. Homiladordik vaqtida qo'llash uchun mutahassis bilan butlatatlashish zarur. Sirob qabul qilishdan avval yahshilab chayqatiladi. Bir shisha ko'pqo'g'i ochilgandan keyin salqin joyida saqlanadi.
+                      Ishlab chixaruvchi: "Mus-Oy Farm"
+                  </p>
+                  <button onclick="button7()" class="button2">Yopish</button>
+                </div>
+              </div>
+            </div>
+            <div class="sirop">
+              <div class="box">
+                <div class="box-img"><img src="Photo/sanus.jpg" width="90%"></div>
+                <div class="box-text">
+                  <p><strong>Nomi:</strong> Sanus</p>
+                  <p><strong>Narxi:</strong> 20000 so`m</p>
+                  <button onclick="sanus()">Batafsil</button>
+                </div>
+              </div>
+              <div class="sanus-container">
+                <div class="sanus">
+                  <p><strong>"VENTRICULE"</strong> 
+                    ozuqaga biologik faol qo`shimchani qo`llash bo`yicha yo`riqnoma<br>
+                    <strong>Chiqarilish shakli:</strong> sirop, 150 ml lik shisha. <br>
+                    <strong>Tarkibi (10 ml sirop uchun):</strong> moychechak gullari ekstrakti (flores matricariae) - 1 g, sabur barglari ekstrakti (flores aloe) - 2 g, qariqiz o`simligi ekstrakti (herbae arctium) - 0,5 g, o'lmas-o't gullari ekstrakti (flores helichrysae) - 0,5 g, yordamchi moddalar.M<br>
+                    <strong>"Ventrikul" biofaol komponentlarining xususiyatlari:</strong><br>
+                    <strong>Moychechak gullari ekstrakti -</strong> yallig'lanishga qarshi, sanchiq qo'llovchi, tinchlantiruvchi, antibakterial, shamollashga qarshi, tutkanoqqa qarshi, kon to`xtatuvchi, og`riq qoldiruvchi, safro haydovchi, biriktiruvchi ta`sirlarni namoyon qiladi.Shuningdek, moychechak biofaol moddalari adsorbsiyalovchi xossalarga ega bo`lib, organizmdan toksinlar va shlaklarni chiqarib yuboradi.<br>
+                    <strong> Sabur o`simligi ekstrakti -</strong> organizm ish faoliyatini hujayralar darajasida yahshilaydi. Sabur o`simligi biologik faol moddalarni faollashtirib, ularning ta'sirini kuchaytiradi. Qonni suyultiradi, qon aylanishini yaxshilaydi.Insult va qon aylanish tizimidagi boshqa muammolarni oldini olish va davolashda samara beradi.<br><strong>Qariqiz o`simligi ekstrakti - </strong>
+                    yaralar va zarohatlarni bitkazadi, yallig'lashni davolashda, oriqsizlantiradi, pehob haidovchi hususiyatni namoyon qiladi, oshqozon osti bezida fermentlar ishlab chiqarishni to'xtatadi. Zhigar, buyraklar, vaf pufagi ishlatilgan yahshilaydi, onni tozalaydi, zaxarli faoliyat va shlaklarni chikarib yuboradi, sotlar o'zlarini tez ishlatadilar.<br>
+                    <strong>O`lmas-o't gullari ekstrakti</strong>
+                     - safro xaydovchi, xolekinetik, xoleretik, yalliglanishga qarshi va antibakterial, sanchiq koldiruvchi va jarohatlarni davolovchi taassirlarga ega. Safro azhralishini ko'chatadi va o'z poufagi sharoitida yahshilaydi. Pt pufagi sphincterlarining silliq musullari va safro yllari bushashtiradi.<br>
+                     Qo'llashga doir ko'rsatmalar. “Ventricul” biolog faol kuchimchasini uyidagi hulotlarga ko'rsatishga tavsia etyladi.
+                       xoletsistit, safro azralishining kiyinlashuvi, gipertoniya;
+                       kamharakatlik va noto'g'ri ovqatlanish;
+                       osqzone osti bezi casalliklari (pankreatit, oshqozon osti bezi nekrozi);
+                       ovqat hazm blishing buzilishi (buzilish), ozuqa harakat qiladigan ichaklard yahshi surilishligi (malasorbtsiya);<br>
+                       ovqat hazm qilish tizimidagi kasalliklarning oqibatidagi meteorizm, qorin dam bulishi, korindagi oqriqlar va nokulayliklar, diareya, ich ketish;
+                       ichkilikbozlik va kashandalik oqibatida kelib chikkan ovqat hazim tizim tizimidagi kasalliklari;
+                       solom ovkatlanish tartibiga amal kilmaslik, oshqozon-ichak tizimlarida zaxarli moddalarning tuzilishi.<br>Allash usuli va tavsiya etiluvchi dozalari. Ichga qabul qilish uchun. 3 yoshdan 7 yoshgacha bulgan bolalarga 2,5 ml dan, 8 yoshdan 12 yoshgacha 5 ml dan, 12 yoshdan oshgan bolalar va kattalar uchun 10 ml dan sirop kabi 2-3 maxal ovatdan keyin.
+                      Qarshi ko'rsatmalar. mahsulot komponentlarini individual qabul qilish mumkin emas.
+                      Yaroqlilik muddati va saqlash sharoitlari: 2 yil. Toza va quruq sharoitda, 25S dan oshmagan haroratda, yorug'likdan himoyalangan joyda saqlanadi.<br>
+                      Mahsus ko'rsatmalar: Biologik faol kuchimcha - dori vositasi emas! Chiqariladi uchun retsept. Homiladordik vaqtida qo'llash uchun mutahassis bilan butlatatlashish zarur. Sirob qabul qilishdan avval yahshilab chayqatiladi. Bir shisha ko'pqo'g'i ochilgandan keyin salqin joyida saqlanadi.
+                      Ishlab chixaruvchi: "Mus-Oy Farm"
+                  </p>
+                  <button onclick="button8()" class="button2">Yopish</button>
+                </div>
+              </div>
+            </div>
+            <div class="sirop">
+              <div class="box">
+                <div class="box-img"><img src="Photo/revertar.jpg" width="90%"></div>
+                <div class="box-text">
+                  <p><strong>Nomi:</strong> Revertar</p>
+                  <p><strong>Narxi:</strong> 20000 so`m</p>
+                  <button onclick="revertar()">Batafsil</button>
+                </div>
+              </div>
+              <div class="revertar-container">
+                <div class="revertar">
+                  <p><strong>"VENTRICULE"</strong> 
+                    ozuqaga biologik faol qo`shimchani qo`llash bo`yicha yo`riqnoma<br>
+                    <strong>Chiqarilish shakli:</strong> sirop, 150 ml lik shisha. <br>
+                    <strong>Tarkibi (10 ml sirop uchun):</strong> moychechak gullari ekstrakti (flores matricariae) - 1 g, sabur barglari ekstrakti (flores aloe) - 2 g, qariqiz o`simligi ekstrakti (herbae arctium) - 0,5 g, o'lmas-o't gullari ekstrakti (flores helichrysae) - 0,5 g, yordamchi moddalar.M<br>
+                    <strong>"Ventrikul" biofaol komponentlarining xususiyatlari:</strong><br>
+                    <strong>Moychechak gullari ekstrakti -</strong> yallig'lanishga qarshi, sanchiq qo'llovchi, tinchlantiruvchi, antibakterial, shamollashga qarshi, tutkanoqqa qarshi, kon to`xtatuvchi, og`riq qoldiruvchi, safro haydovchi, biriktiruvchi ta`sirlarni namoyon qiladi.Shuningdek, moychechak biofaol moddalari adsorbsiyalovchi xossalarga ega bo`lib, organizmdan toksinlar va shlaklarni chiqarib yuboradi.<br>
+                    <strong> Sabur o`simligi ekstrakti -</strong> organizm ish faoliyatini hujayralar darajasida yahshilaydi. Sabur o`simligi biologik faol moddalarni faollashtirib, ularning ta'sirini kuchaytiradi. Qonni suyultiradi, qon aylanishini yaxshilaydi.Insult va qon aylanish tizimidagi boshqa muammolarni oldini olish va davolashda samara beradi.<br><strong>Qariqiz o`simligi ekstrakti - </strong>
+                    yaralar va zarohatlarni bitkazadi, yallig'lashni davolashda, oriqsizlantiradi, pehob haidovchi hususiyatni namoyon qiladi, oshqozon osti bezida fermentlar ishlab chiqarishni to'xtatadi. Zhigar, buyraklar, vaf pufagi ishlatilgan yahshilaydi, onni tozalaydi, zaxarli faoliyat va shlaklarni chikarib yuboradi, sotlar o'zlarini tez ishlatadilar.<br>
+                    <strong>O`lmas-o't gullari ekstrakti</strong>
+                     - safro xaydovchi, xolekinetik, xoleretik, yalliglanishga qarshi va antibakterial, sanchiq koldiruvchi va jarohatlarni davolovchi taassirlarga ega. Safro azhralishini ko'chatadi va o'z poufagi sharoitida yahshilaydi. Pt pufagi sphincterlarining silliq musullari va safro yllari bushashtiradi.<br>
+                     Qo'llashga doir ko'rsatmalar. “Ventricul” biolog faol kuchimchasini uyidagi hulotlarga ko'rsatishga tavsia etyladi.
+                       xoletsistit, safro azralishining kiyinlashuvi, gipertoniya;
+                       kamharakatlik va noto'g'ri ovqatlanish;
+                       osqzone osti bezi casalliklari (pankreatit, oshqozon osti bezi nekrozi);
+                       ovqat hazm blishing buzilishi (buzilish), ozuqa harakat qiladigan ichaklard yahshi surilishligi (malasorbtsiya);<br>
+                       ovqat hazm qilish tizimidagi kasalliklarning oqibatidagi meteorizm, qorin dam bulishi, korindagi oqriqlar va nokulayliklar, diareya, ich ketish;
+                       ichkilikbozlik va kashandalik oqibatida kelib chikkan ovqat hazim tizim tizimidagi kasalliklari;
+                       solom ovkatlanish tartibiga amal kilmaslik, oshqozon-ichak tizimlarida zaxarli moddalarning tuzilishi.<br>Allash usuli va tavsiya etiluvchi dozalari. Ichga qabul qilish uchun. 3 yoshdan 7 yoshgacha bulgan bolalarga 2,5 ml dan, 8 yoshdan 12 yoshgacha 5 ml dan, 12 yoshdan oshgan bolalar va kattalar uchun 10 ml dan sirop kabi 2-3 maxal ovatdan keyin.
+                      Qarshi ko'rsatmalar. mahsulot komponentlarini individual qabul qilish mumkin emas.
+                      Yaroqlilik muddati va saqlash sharoitlari: 2 yil. Toza va quruq sharoitda, 25S dan oshmagan haroratda, yorug'likdan himoyalangan joyda saqlanadi.<br>
+                      Mahsus ko'rsatmalar: Biologik faol kuchimcha - dori vositasi emas! Chiqariladi uchun retsept. Homiladordik vaqtida qo'llash uchun mutahassis bilan butlatatlashish zarur. Sirob qabul qilishdan avval yahshilab chayqatiladi. Bir shisha ko'pqo'g'i ochilgandan keyin salqin joyida saqlanadi.
+                      Ishlab chixaruvchi: "Mus-Oy Farm"
+                  </p>
+                  <button onclick="button9()" class="button2">Yopish</button>
+                </div>
+              </div>
+            </div>
+            <div class="sirop">
+              <div class="box">
+                <div class="box-img"><img src="Photo/simver.jpg" width="90%"></div>
+                <div class="box-text">
+                  <p><strong>Nomi:</strong> Simver</p>
+                  <p><strong>Narxi:</strong> 20000 so`m</p>
+                  <button onclick="simver()">Batafsil</button>
+                </div>
+              </div>
+              <div class="simver-container">
+                <div class="simver">
+                  <p><strong>"VENTRICULE"</strong> 
+                    ozuqaga biologik faol qo`shimchani qo`llash bo`yicha yo`riqnoma<br>
+                    <strong>Chiqarilish shakli:</strong> sirop, 150 ml lik shisha. <br>
+                    <strong>Tarkibi (10 ml sirop uchun):</strong> moychechak gullari ekstrakti (flores matricariae) - 1 g, sabur barglari ekstrakti (flores aloe) - 2 g, qariqiz o`simligi ekstrakti (herbae arctium) - 0,5 g, o'lmas-o't gullari ekstrakti (flores helichrysae) - 0,5 g, yordamchi moddalar.M<br>
+                    <strong>"Ventrikul" biofaol komponentlarining xususiyatlari:</strong><br>
+                    <strong>Moychechak gullari ekstrakti -</strong> yallig'lanishga qarshi, sanchiq qo'llovchi, tinchlantiruvchi, antibakterial, shamollashga qarshi, tutkanoqqa qarshi, kon to`xtatuvchi, og`riq qoldiruvchi, safro haydovchi, biriktiruvchi ta`sirlarni namoyon qiladi.Shuningdek, moychechak biofaol moddalari adsorbsiyalovchi xossalarga ega bo`lib, organizmdan toksinlar va shlaklarni chiqarib yuboradi.<br>
+                    <strong> Sabur o`simligi ekstrakti -</strong> organizm ish faoliyatini hujayralar darajasida yahshilaydi. Sabur o`simligi biologik faol moddalarni faollashtirib, ularning ta'sirini kuchaytiradi. Qonni suyultiradi, qon aylanishini yaxshilaydi.Insult va qon aylanish tizimidagi boshqa muammolarni oldini olish va davolashda samara beradi.<br><strong>Qariqiz o`simligi ekstrakti - </strong>
+                    yaralar va zarohatlarni bitkazadi, yallig'lashni davolashda, oriqsizlantiradi, pehob haidovchi hususiyatni namoyon qiladi, oshqozon osti bezida fermentlar ishlab chiqarishni to'xtatadi. Zhigar, buyraklar, vaf pufagi ishlatilgan yahshilaydi, onni tozalaydi, zaxarli faoliyat va shlaklarni chikarib yuboradi, sotlar o'zlarini tez ishlatadilar.<br>
+                    <strong>O`lmas-o't gullari ekstrakti</strong>
+                     - safro xaydovchi, xolekinetik, xoleretik, yalliglanishga qarshi va antibakterial, sanchiq koldiruvchi va jarohatlarni davolovchi taassirlarga ega. Safro azhralishini ko'chatadi va o'z poufagi sharoitida yahshilaydi. Pt pufagi sphincterlarining silliq musullari va safro yllari bushashtiradi.<br>
+                     Qo'llashga doir ko'rsatmalar. “Ventricul” biolog faol kuchimchasini uyidagi hulotlarga ko'rsatishga tavsia etyladi.
+                       xoletsistit, safro azralishining kiyinlashuvi, gipertoniya;
+                       kamharakatlik va noto'g'ri ovqatlanish;
+                       osqzone osti bezi casalliklari (pankreatit, oshqozon osti bezi nekrozi);
+                       ovqat hazm blishing buzilishi (buzilish), ozuqa harakat qiladigan ichaklard yahshi surilishligi (malasorbtsiya);<br>
+                       ovqat hazm qilish tizimidagi kasalliklarning oqibatidagi meteorizm, qorin dam bulishi, korindagi oqriqlar va nokulayliklar, diareya, ich ketish;
+                       ichkilikbozlik va kashandalik oqibatida kelib chikkan ovqat hazim tizim tizimidagi kasalliklari;
+                       solom ovkatlanish tartibiga amal kilmaslik, oshqozon-ichak tizimlarida zaxarli moddalarning tuzilishi.<br>Allash usuli va tavsiya etiluvchi dozalari. Ichga qabul qilish uchun. 3 yoshdan 7 yoshgacha bulgan bolalarga 2,5 ml dan, 8 yoshdan 12 yoshgacha 5 ml dan, 12 yoshdan oshgan bolalar va kattalar uchun 10 ml dan sirop kabi 2-3 maxal ovatdan keyin.
+                      Qarshi ko'rsatmalar. mahsulot komponentlarini individual qabul qilish mumkin emas.
+                      Yaroqlilik muddati va saqlash sharoitlari: 2 yil. Toza va quruq sharoitda, 25S dan oshmagan haroratda, yorug'likdan himoyalangan joyda saqlanadi.<br>
+                      Mahsus ko'rsatmalar: Biologik faol kuchimcha - dori vositasi emas! Chiqariladi uchun retsept. Homiladordik vaqtida qo'llash uchun mutahassis bilan butlatatlashish zarur. Sirob qabul qilishdan avval yahshilab chayqatiladi. Bir shisha ko'pqo'g'i ochilgandan keyin salqin joyida saqlanadi.
+                      Ishlab chixaruvchi: "Mus-Oy Farm"
+                  </p>
+                  <button onclick="button10()" class="button2">Yopish</button>
+                </div>
+              </div>
+            </div>
+            <div class="sirop">
+              <div class="box">
+                <div class="box-img"><img src="Photo/Сангиус сироп1.jpg" width="90%"></div>
+                <div class="box-text">
+                  <p><strong>Nomi:</strong> Sangius</p>
+                  <p><strong>Narxi:</strong> 20000 so`m</p>
+                  <button onclick="sangius()">Batafsil</button>
+                </div>
+              </div>
+              <div class="sangius-container">
+                <div class="sangius">
+                  <p><strong>"VENTRICULE"</strong> 
+                    ozuqaga biologik faol qo`shimchani qo`llash bo`yicha yo`riqnoma<br>
+                    <strong>Chiqarilish shakli:</strong> sirop, 150 ml lik shisha. <br>
+                    <strong>Tarkibi (10 ml sirop uchun):</strong> moychechak gullari ekstrakti (flores matricariae) - 1 g, sabur barglari ekstrakti (flores aloe) - 2 g, qariqiz o`simligi ekstrakti (herbae arctium) - 0,5 g, o'lmas-o't gullari ekstrakti (flores helichrysae) - 0,5 g, yordamchi moddalar.M<br>
+                    <strong>"Ventrikul" biofaol komponentlarining xususiyatlari:</strong><br>
+                    <strong>Moychechak gullari ekstrakti -</strong> yallig'lanishga qarshi, sanchiq qo'llovchi, tinchlantiruvchi, antibakterial, shamollashga qarshi, tutkanoqqa qarshi, kon to`xtatuvchi, og`riq qoldiruvchi, safro haydovchi, biriktiruvchi ta`sirlarni namoyon qiladi.Shuningdek, moychechak biofaol moddalari adsorbsiyalovchi xossalarga ega bo`lib, organizmdan toksinlar va shlaklarni chiqarib yuboradi.<br>
+                    <strong> Sabur o`simligi ekstrakti -</strong> organizm ish faoliyatini hujayralar darajasida yahshilaydi. Sabur o`simligi biologik faol moddalarni faollashtirib, ularning ta'sirini kuchaytiradi. Qonni suyultiradi, qon aylanishini yaxshilaydi.Insult va qon aylanish tizimidagi boshqa muammolarni oldini olish va davolashda samara beradi.<br><strong>Qariqiz o`simligi ekstrakti - </strong>
+                    yaralar va zarohatlarni bitkazadi, yallig'lashni davolashda, oriqsizlantiradi, pehob haidovchi hususiyatni namoyon qiladi, oshqozon osti bezida fermentlar ishlab chiqarishni to'xtatadi. Zhigar, buyraklar, vaf pufagi ishlatilgan yahshilaydi, onni tozalaydi, zaxarli faoliyat va shlaklarni chikarib yuboradi, sotlar o'zlarini tez ishlatadilar.<br>
+                    <strong>O`lmas-o't gullari ekstrakti</strong>
+                     - safro xaydovchi, xolekinetik, xoleretik, yalliglanishga qarshi va antibakterial, sanchiq koldiruvchi va jarohatlarni davolovchi taassirlarga ega. Safro azhralishini ko'chatadi va o'z poufagi sharoitida yahshilaydi. Pt pufagi sphincterlarining silliq musullari va safro yllari bushashtiradi.<br>
+                     Qo'llashga doir ko'rsatmalar. “Ventricul” biolog faol kuchimchasini uyidagi hulotlarga ko'rsatishga tavsia etyladi.
+                       xoletsistit, safro azralishining kiyinlashuvi, gipertoniya;
+                       kamharakatlik va noto'g'ri ovqatlanish;
+                       osqzone osti bezi casalliklari (pankreatit, oshqozon osti bezi nekrozi);
+                       ovqat hazm blishing buzilishi (buzilish), ozuqa harakat qiladigan ichaklard yahshi surilishligi (malasorbtsiya);<br>
+                       ovqat hazm qilish tizimidagi kasalliklarning oqibatidagi meteorizm, qorin dam bulishi, korindagi oqriqlar va nokulayliklar, diareya, ich ketish;
+                       ichkilikbozlik va kashandalik oqibatida kelib chikkan ovqat hazim tizim tizimidagi kasalliklari;
+                       solom ovkatlanish tartibiga amal kilmaslik, oshqozon-ichak tizimlarida zaxarli moddalarning tuzilishi.<br>Allash usuli va tavsiya etiluvchi dozalari. Ichga qabul qilish uchun. 3 yoshdan 7 yoshgacha bulgan bolalarga 2,5 ml dan, 8 yoshdan 12 yoshgacha 5 ml dan, 12 yoshdan oshgan bolalar va kattalar uchun 10 ml dan sirop kabi 2-3 maxal ovatdan keyin.
+                      Qarshi ko'rsatmalar. mahsulot komponentlarini individual qabul qilish mumkin emas.
+                      Yaroqlilik muddati va saqlash sharoitlari: 2 yil. Toza va quruq sharoitda, 25S dan oshmagan haroratda, yorug'likdan himoyalangan joyda saqlanadi.<br>
+                      Mahsus ko'rsatmalar: Biologik faol kuchimcha - dori vositasi emas! Chiqariladi uchun retsept. Homiladordik vaqtida qo'llash uchun mutahassis bilan butlatatlashish zarur. Sirob qabul qilishdan avval yahshilab chayqatiladi. Bir shisha ko'pqo'g'i ochilgandan keyin salqin joyida saqlanadi.
+                      Ishlab chixaruvchi: "Mus-Oy Farm"
+                  </p>
+                  <button onclick="button11()" class="button2">Yopish</button>
+                </div>
+              </div>
+            </div>
+            <div class="sirop">
+              <div class="box">
+                <div class="box-img"><img src="Photo/tassmis.jpg" width="90%"></div>
+                <div class="box-text">
+                  <p><strong>Nomi:</strong> Tassmis</p>
+                  <p><strong>Narxi:</strong> 20000 so`m</p>
+                  <button onclick="tassmis()">Batafsil</button>
+                </div>
+              </div>
+              <div class="tassmis-container">
+                <div class="tassmis">
+                  <p><strong>"VENTRICULE"</strong> 
+                    ozuqaga biologik faol qo`shimchani qo`llash bo`yicha yo`riqnoma<br>
+                    <strong>Chiqarilish shakli:</strong> sirop, 150 ml lik shisha. <br>
+                    <strong>Tarkibi (10 ml sirop uchun):</strong> moychechak gullari ekstrakti (flores matricariae) - 1 g, sabur barglari ekstrakti (flores aloe) - 2 g, qariqiz o`simligi ekstrakti (herbae arctium) - 0,5 g, o'lmas-o't gullari ekstrakti (flores helichrysae) - 0,5 g, yordamchi moddalar.M<br>
+                    <strong>"Ventrikul" biofaol komponentlarining xususiyatlari:</strong><br>
+                    <strong>Moychechak gullari ekstrakti -</strong> yallig'lanishga qarshi, sanchiq qo'llovchi, tinchlantiruvchi, antibakterial, shamollashga qarshi, tutkanoqqa qarshi, kon to`xtatuvchi, og`riq qoldiruvchi, safro haydovchi, biriktiruvchi ta`sirlarni namoyon qiladi.Shuningdek, moychechak biofaol moddalari adsorbsiyalovchi xossalarga ega bo`lib, organizmdan toksinlar va shlaklarni chiqarib yuboradi.<br>
+                    <strong> Sabur o`simligi ekstrakti -</strong> organizm ish faoliyatini hujayralar darajasida yahshilaydi. Sabur o`simligi biologik faol moddalarni faollashtirib, ularning ta'sirini kuchaytiradi. Qonni suyultiradi, qon aylanishini yaxshilaydi.Insult va qon aylanish tizimidagi boshqa muammolarni oldini olish va davolashda samara beradi.<br><strong>Qariqiz o`simligi ekstrakti - </strong>
+                    yaralar va zarohatlarni bitkazadi, yallig'lashni davolashda, oriqsizlantiradi, pehob haidovchi hususiyatni namoyon qiladi, oshqozon osti bezida fermentlar ishlab chiqarishni to'xtatadi. Zhigar, buyraklar, vaf pufagi ishlatilgan yahshilaydi, onni tozalaydi, zaxarli faoliyat va shlaklarni chikarib yuboradi, sotlar o'zlarini tez ishlatadilar.<br>
+                    <strong>O`lmas-o't gullari ekstrakti</strong>
+                     - safro xaydovchi, xolekinetik, xoleretik, yalliglanishga qarshi va antibakterial, sanchiq koldiruvchi va jarohatlarni davolovchi taassirlarga ega. Safro azhralishini ko'chatadi va o'z poufagi sharoitida yahshilaydi. Pt pufagi sphincterlarining silliq musullari va safro yllari bushashtiradi.<br>
+                     Qo'llashga doir ko'rsatmalar. “Ventricul” biolog faol kuchimchasini uyidagi hulotlarga ko'rsatishga tavsia etyladi.
+                       xoletsistit, safro azralishining kiyinlashuvi, gipertoniya;
+                       kamharakatlik va noto'g'ri ovqatlanish;
+                       osqzone osti bezi casalliklari (pankreatit, oshqozon osti bezi nekrozi);
+                       ovqat hazm blishing buzilishi (buzilish), ozuqa harakat qiladigan ichaklard yahshi surilishligi (malasorbtsiya);<br>
+                       ovqat hazm qilish tizimidagi kasalliklarning oqibatidagi meteorizm, qorin dam bulishi, korindagi oqriqlar va nokulayliklar, diareya, ich ketish;
+                       ichkilikbozlik va kashandalik oqibatida kelib chikkan ovqat hazim tizim tizimidagi kasalliklari;
+                       solom ovkatlanish tartibiga amal kilmaslik, oshqozon-ichak tizimlarida zaxarli moddalarning tuzilishi.<br>Allash usuli va tavsiya etiluvchi dozalari. Ichga qabul qilish uchun. 3 yoshdan 7 yoshgacha bulgan bolalarga 2,5 ml dan, 8 yoshdan 12 yoshgacha 5 ml dan, 12 yoshdan oshgan bolalar va kattalar uchun 10 ml dan sirop kabi 2-3 maxal ovatdan keyin.
+                      Qarshi ko'rsatmalar. mahsulot komponentlarini individual qabul qilish mumkin emas.
+                      Yaroqlilik muddati va saqlash sharoitlari: 2 yil. Toza va quruq sharoitda, 25S dan oshmagan haroratda, yorug'likdan himoyalangan joyda saqlanadi.<br>
+                      Mahsus ko'rsatmalar: Biologik faol kuchimcha - dori vositasi emas! Chiqariladi uchun retsept. Homiladordik vaqtida qo'llash uchun mutahassis bilan butlatatlashish zarur. Sirob qabul qilishdan avval yahshilab chayqatiladi. Bir shisha ko'pqo'g'i ochilgandan keyin salqin joyida saqlanadi.
+                      Ishlab chixaruvchi: "Mus-Oy Farm"
+                  </p>
+                  <button onclick="button12()" class="button2">Yopish</button>
+                </div>
+              </div>
+            </div>
+            <div class="sirop">
+              <div class="box">
+                <div class="box-img"><img src="Photo/Нефрокон сироп1.jpg" width="90%"></div>
+                <div class="box-text">
+                  <p><strong>Nomi:</strong> Nefrokon</p>
+                  <p><strong>Narxi:</strong> 20000 so`m</p>
+                  <button onclick="nefrokon()">Batafsil</button>
+                </div>
+              </div>
+              <div class="nefrokon-container">
+                <div class="nefrokon">
+                  <p><strong>"VENTRICULE"</strong> 
+                    ozuqaga biologik faol qo`shimchani qo`llash bo`yicha yo`riqnoma<br>
+                    <strong>Chiqarilish shakli:</strong> sirop, 150 ml lik shisha. <br>
+                    <strong>Tarkibi (10 ml sirop uchun):</strong> moychechak gullari ekstrakti (flores matricariae) - 1 g, sabur barglari ekstrakti (flores aloe) - 2 g, qariqiz o`simligi ekstrakti (herbae arctium) - 0,5 g, o'lmas-o't gullari ekstrakti (flores helichrysae) - 0,5 g, yordamchi moddalar.M<br>
+                    <strong>"Ventrikul" biofaol komponentlarining xususiyatlari:</strong><br>
+                    <strong>Moychechak gullari ekstrakti -</strong> yallig'lanishga qarshi, sanchiq qo'llovchi, tinchlantiruvchi, antibakterial, shamollashga qarshi, tutkanoqqa qarshi, kon to`xtatuvchi, og`riq qoldiruvchi, safro haydovchi, biriktiruvchi ta`sirlarni namoyon qiladi.Shuningdek, moychechak biofaol moddalari adsorbsiyalovchi xossalarga ega bo`lib, organizmdan toksinlar va shlaklarni chiqarib yuboradi.<br>
+                    <strong> Sabur o`simligi ekstrakti -</strong> organizm ish faoliyatini hujayralar darajasida yahshilaydi. Sabur o`simligi biologik faol moddalarni faollashtirib, ularning ta'sirini kuchaytiradi. Qonni suyultiradi, qon aylanishini yaxshilaydi.Insult va qon aylanish tizimidagi boshqa muammolarni oldini olish va davolashda samara beradi.<br><strong>Qariqiz o`simligi ekstrakti - </strong>
+                    yaralar va zarohatlarni bitkazadi, yallig'lashni davolashda, oriqsizlantiradi, pehob haidovchi hususiyatni namoyon qiladi, oshqozon osti bezida fermentlar ishlab chiqarishni to'xtatadi. Zhigar, buyraklar, vaf pufagi ishlatilgan yahshilaydi, onni tozalaydi, zaxarli faoliyat va shlaklarni chikarib yuboradi, sotlar o'zlarini tez ishlatadilar.<br>
+                    <strong>O`lmas-o't gullari ekstrakti</strong>
+                     - safro xaydovchi, xolekinetik, xoleretik, yalliglanishga qarshi va antibakterial, sanchiq koldiruvchi va jarohatlarni davolovchi taassirlarga ega. Safro azhralishini ko'chatadi va o'z poufagi sharoitida yahshilaydi. Pt pufagi sphincterlarining silliq musullari va safro yllari bushashtiradi.<br>
+                     Qo'llashga doir ko'rsatmalar. “Ventricul” biolog faol kuchimchasini uyidagi hulotlarga ko'rsatishga tavsia etyladi.
+                       xoletsistit, safro azralishining kiyinlashuvi, gipertoniya;
+                       kamharakatlik va noto'g'ri ovqatlanish;
+                       osqzone osti bezi casalliklari (pankreatit, oshqozon osti bezi nekrozi);
+                       ovqat hazm blishing buzilishi (buzilish), ozuqa harakat qiladigan ichaklard yahshi surilishligi (malasorbtsiya);<br>
+                       ovqat hazm qilish tizimidagi kasalliklarning oqibatidagi meteorizm, qorin dam bulishi, korindagi oqriqlar va nokulayliklar, diareya, ich ketish;
+                       ichkilikbozlik va kashandalik oqibatida kelib chikkan ovqat hazim tizim tizimidagi kasalliklari;
+                       solom ovkatlanish tartibiga amal kilmaslik, oshqozon-ichak tizimlarida zaxarli moddalarning tuzilishi.<br>Allash usuli va tavsiya etiluvchi dozalari. Ichga qabul qilish uchun. 3 yoshdan 7 yoshgacha bulgan bolalarga 2,5 ml dan, 8 yoshdan 12 yoshgacha 5 ml dan, 12 yoshdan oshgan bolalar va kattalar uchun 10 ml dan sirop kabi 2-3 maxal ovatdan keyin.
+                      Qarshi ko'rsatmalar. mahsulot komponentlarini individual qabul qilish mumkin emas.
+                      Yaroqlilik muddati va saqlash sharoitlari: 2 yil. Toza va quruq sharoitda, 25S dan oshmagan haroratda, yorug'likdan himoyalangan joyda saqlanadi.<br>
+                      Mahsus ko'rsatmalar: Biologik faol kuchimcha - dori vositasi emas! Chiqariladi uchun retsept. Homiladordik vaqtida qo'llash uchun mutahassis bilan butlatatlashish zarur. Sirob qabul qilishdan avval yahshilab chayqatiladi. Bir shisha ko'pqo'g'i ochilgandan keyin salqin joyida saqlanadi.
+                      Ishlab chixaruvchi: "Mus-Oy Farm"
+                  </p>
+                  <button onclick="button13()" class="button2">Yopish</button>
+                </div>
+              </div>
+            </div>
+            <div class="sirop">
+              <div class="box">
+                <div class="box-img"><img src="Photo/bon.jpg" width="90%"></div>
+                <div class="box-text">
+                  <p><strong>Nomi:</strong> Bon Kalsiy-D<sub>3</sub></p>
+                  <p><strong>Narxi:</strong> 20000 so`m</p>
+                  <button onclick="bon1()">Batafsil</button>
+                </div>
+              </div>
+              <div class="bon1-container">
+                <div class="bon1">
+                  <p><strong>"VENTRICULE"</strong> 
+                    ozuqaga biologik faol qo`shimchani qo`llash bo`yicha yo`riqnoma<br>
+                    <strong>Chiqarilish shakli:</strong> sirop, 150 ml lik shisha. <br>
+                    <strong>Tarkibi (10 ml sirop uchun):</strong> moychechak gullari ekstrakti (flores matricariae) - 1 g, sabur barglari ekstrakti (flores aloe) - 2 g, qariqiz o`simligi ekstrakti (herbae arctium) - 0,5 g, o'lmas-o't gullari ekstrakti (flores helichrysae) - 0,5 g, yordamchi moddalar.M<br>
+                    <strong>"Ventrikul" biofaol komponentlarining xususiyatlari:</strong><br>
+                    <strong>Moychechak gullari ekstrakti -</strong> yallig'lanishga qarshi, sanchiq qo'llovchi, tinchlantiruvchi, antibakterial, shamollashga qarshi, tutkanoqqa qarshi, kon to`xtatuvchi, og`riq qoldiruvchi, safro haydovchi, biriktiruvchi ta`sirlarni namoyon qiladi.Shuningdek, moychechak biofaol moddalari adsorbsiyalovchi xossalarga ega bo`lib, organizmdan toksinlar va shlaklarni chiqarib yuboradi.<br>
+                    <strong> Sabur o`simligi ekstrakti -</strong> organizm ish faoliyatini hujayralar darajasida yahshilaydi. Sabur o`simligi biologik faol moddalarni faollashtirib, ularning ta'sirini kuchaytiradi. Qonni suyultiradi, qon aylanishini yaxshilaydi.Insult va qon aylanish tizimidagi boshqa muammolarni oldini olish va davolashda samara beradi.<br><strong>Qariqiz o`simligi ekstrakti - </strong>
+                    yaralar va zarohatlarni bitkazadi, yallig'lashni davolashda, oriqsizlantiradi, pehob haidovchi hususiyatni namoyon qiladi, oshqozon osti bezida fermentlar ishlab chiqarishni to'xtatadi. Zhigar, buyraklar, vaf pufagi ishlatilgan yahshilaydi, onni tozalaydi, zaxarli faoliyat va shlaklarni chikarib yuboradi, sotlar o'zlarini tez ishlatadilar.<br>
+                    <strong>O`lmas-o't gullari ekstrakti</strong>
+                     - safro xaydovchi, xolekinetik, xoleretik, yalliglanishga qarshi va antibakterial, sanchiq koldiruvchi va jarohatlarni davolovchi taassirlarga ega. Safro azhralishini ko'chatadi va o'z poufagi sharoitida yahshilaydi. Pt pufagi sphincterlarining silliq musullari va safro yllari bushashtiradi.<br>
+                     Qo'llashga doir ko'rsatmalar. “Ventricul” biolog faol kuchimchasini uyidagi hulotlarga ko'rsatishga tavsia etyladi.
+                       xoletsistit, safro azralishining kiyinlashuvi, gipertoniya;
+                       kamharakatlik va noto'g'ri ovqatlanish;
+                       osqzone osti bezi casalliklari (pankreatit, oshqozon osti bezi nekrozi);
+                       ovqat hazm blishing buzilishi (buzilish), ozuqa harakat qiladigan ichaklard yahshi surilishligi (malasorbtsiya);<br>
+                       ovqat hazm qilish tizimidagi kasalliklarning oqibatidagi meteorizm, qorin dam bulishi, korindagi oqriqlar va nokulayliklar, diareya, ich ketish;
+                       ichkilikbozlik va kashandalik oqibatida kelib chikkan ovqat hazim tizim tizimidagi kasalliklari;
+                       solom ovkatlanish tartibiga amal kilmaslik, oshqozon-ichak tizimlarida zaxarli moddalarning tuzilishi.<br>Allash usuli va tavsiya etiluvchi dozalari. Ichga qabul qilish uchun. 3 yoshdan 7 yoshgacha bulgan bolalarga 2,5 ml dan, 8 yoshdan 12 yoshgacha 5 ml dan, 12 yoshdan oshgan bolalar va kattalar uchun 10 ml dan sirop kabi 2-3 maxal ovatdan keyin.
+                      Qarshi ko'rsatmalar. mahsulot komponentlarini individual qabul qilish mumkin emas.
+                      Yaroqlilik muddati va saqlash sharoitlari: 2 yil. Toza va quruq sharoitda, 25S dan oshmagan haroratda, yorug'likdan himoyalangan joyda saqlanadi.<br>
+                      Mahsus ko'rsatmalar: Biologik faol kuchimcha - dori vositasi emas! Chiqariladi uchun retsept. Homiladordik vaqtida qo'llash uchun mutahassis bilan butlatatlashish zarur. Sirob qabul qilishdan avval yahshilab chayqatiladi. Bir shisha ko'pqo'g'i ochilgandan keyin salqin joyida saqlanadi.
+                      Ishlab chixaruvchi: "Mus-Oy Farm"
+                  </p>
+                  <button onclick="button14()" class="button2">Yopish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+     </section>
+     <footer id="footer">
+       <div class="footerOne">
+         <h1>Aloqa</h1>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni illum officiis exercitationem voluptates dolore incidunt reprehenderit non, perspiciatis animi? Aliquam beatae, perferendis similique laboriosam tenetur ratione eaque voluptate modi aliquid?</p>
+         <div class="img" style="height: 100px;">
+          <a href="#"><img src="Photo/tw.png" width="30px"></a>
+          <a href="#"><img src="Photo/fb.png" width="30px"></a>
+          <a href="#"><img src="Photo/yt.png" width="45px"></a>
+          <a href="#"><img src="Photo/ing.png" width="30px"></a>
+          <a href="#"><img src="Photo/tg.png" width="45px"></a>
+         </div>
+       </div>
+       <div class="footerTwo">
+        <div style="position:relative;overflow:hidden;"><a href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Toshkent</a><a href="https://yandex.uz/maps/geo/1543141525/?clid=2233626&ll=69.212579%2C41.282066&utm_medium=mapframe&utm_source=maps&z=15" style="color:#eee;font-size:12px;position:absolute;top:14px;">Mirzo Ulug'bek metro bekati — Yandex.Xarita</a><iframe src="https://yandex.uz/map-widget/v1/-/CCUanAgMhD" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+       </div>
+       <div class="footerThree">
+          <h3>Adress:</h3>
+          <div class="footer-img-p">
+            <img src="Photo/location.png" width="23px">
+            <p>O`zbekiston, Surxondaryo, Termiz</p>
+          </div>
+          <hr>
+          <h3>Email:</h3>
+          <div class="footer-img-p">
+            <img src="Photo/mail.png" width="23px">
+            <p><a href="#">exsample</a></p>
+          </div>
+          <hr>
+          <h3>Telefon:</h3>
+          <div class="footer-img-p">
+            <img src="Photo/phone2.png" width="23px">
+            <p><a style="align-items: center;" href="#">000000000</a></p>
+          </div>
+       </div>
+     </footer>
+     <p class="©">© Mus-Oy Farm Company.Uzbekistan</p>
+
+
+
+
+
+
+
+
+     <script>
+        const navbarNav = document.querySelector('.ul');
+
+        function add(){
+            navbarNav.classList.add('open');
+        }
+        function remove(){
+            navbarNav.classList.remove('open');
+        }
+    </script>
+    <script>
+      let pastulaContainer = document.querySelector('.pastula-container');
+
+      function pastula(){
+        pastulaContainer.style.transform = 'translateX(0%)';
+      }
+      function button4(){
+        pastulaContainer.style.transform = 'translateX(-100%)';
+      }
+    </script>
+    <script>
+      let hiloremContainer = document.querySelector('.hilorem-container');
+
+      function hilorem(){
+        hiloremContainer.style.transform = 'translateX(0%)';
+      }
+      function button7(){
+        hiloremContainer.style.transform = 'translateX(-100%)';
+      }
+    </script>
+    <script>
+      let bonContainer = document.querySelector('.bon-container');
+
+      function bon(){
+        bonContainer.style.transform = 'translateX(0%)';
+      }
+      function button2(){
+        bonContainer.style.transform = 'translateX(-100%)';
+      }
+    </script>
+    <script>
+      let bon1Container = document.querySelector('.bon1-container');
+
+      function bon1(){
+        bon1Container.style.transform = 'translateX(0%)';
+      }
+      function button14(){
+        bon1Container.style.transform = 'translateX(-100%)';
+      }
+    </script>
+    <script>
+      let revertarContainer = document.querySelector('.revertar-container');
+
+      function revertar(){
+        revertarContainer.style.transform = 'translateX(0%)';
+      }
+      function button9(){
+        revertarContainer.style.transform = 'translateX(-100%)';
+      }
+    </script>
+    <script>
+      let tassmisContainer = document.querySelector('.tassmis-container');
+
+      function tassmis(){
+        tassmisContainer.style.transform = 'translateX(0%)';
+      }
+      function button12(){
+        tassmisContainer.style.transform = 'translateX(-100%)';
+      }
+    </script>
+    <script>
+      let simverContainer = document.querySelector('.simver-container');
+
+      function simver(){
+        simverContainer.style.transform = 'translateX(0%)';
+      }
+      function button10(){
+        simverContainer.style.transform = 'translateX(-100%)';
+      }
+    </script>
+    <script>
+      let forticContainer = document.querySelector('.fortic-container');
+
+      function fortic(){
+        forticContainer.style.transform = 'translateX(0%)';
+      }
+      function button1(){
+        forticContainer.style.transform = 'translateX(-100%)';
+      }
+    </script>
+    <script>
+      let sangiusContainer = document.querySelector('.sangius-container');
+
+      function sangius(){
+        sangiusContainer.style.transform = 'translateX(0%)';
+      }
+      function button11(){
+        sangiusContainer.style.transform = 'translateX(-100%)';
+      }
+    </script>
+    <script>
+      let sanusContainer = document.querySelector('.sanus-container');
+
+      function sanus(){
+        sanusContainer.style.transform = 'translateX(0%)';
+      }
+      function button8(){
+        sanusContainer.style.transform = 'translateX(-100%)';
+      }
+    </script>
+    <script>
+      let nefrokonContainer = document.querySelector('.nefrokon-container');
+
+      function nefrokon(){
+        nefrokonContainer.style.transform = 'translateX(0%)';
+      }
+      function button13(){
+        nefrokonContainer.style.transform = 'translateX(-100%)';
+      }
+    </script>
+    <script>
+      let neyrotropContainer = document.querySelector('.neyrotrop-container');
+
+      function neyrotrop(){
+        neyrotropContainer.style.transform = 'translateX(0%)';
+      }
+      function button6(){
+        neyrotropContainer.style.transform = 'translateX(-100%)';
+      }
+    </script>
+    <script>
+      let gayterContainer = document.querySelector('.gayter-container');
+
+      function gayter(){
+        gayterContainer.style.transform = 'translateX(0%)';
+      }
+      function button5(){
+        gayterContainer.style.transform = 'translateX(-100%)';
+      }
+    </script>
+    <script>
+      let ventrikulContainer = document.querySelector('.ventrikul-container');
+
+      function ventrikul(){
+        ventrikulContainer.style.transform = 'translateX(0%)';
+      }
+      function button3(){
+        ventrikulContainer.style.transform = 'translateX(-100%)';
+      }
+    </script>
+    <script>
+      var slideImg = document.getElementById("slideImg");
+      var images = new Array(
+          "Photo/novinka.jpg",
+          "Photo/gayter2.jpg",
+          "Photo/nefrokon2.jpg",
+          "Photo/neyrostop2.jpg",
+          "Photo/sangius2.jpg"
+      );
+      var len = images.length;
+      var i = 0;
+      function Yangilikimg(){
+        if(i > len-1){
+          i = 0;
+        }
+        slideImg.src = images[i];
+        i++;
+        setTimeout('Yangilikimg()', 5800);
+      } 
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.Uzb').click(function(){
+          $('.UzbRusEng').toggleClass('active')
+        })
+      })
+    </script>
+    <!-- <script type="text/javascript">
+      var span = document.getElementsByClassName('span');
+      var div = document.getElementsByClassName('sirop');
+      var l = 0;
+      span[1].onclick = () =>{
+        l++;
+        for(var i of div){
+          if (l==0) {i.style.left = "0px";}
+          if (l==1) {i.style.left = "-740px";}
+          if (l==2) {i.style.left = "-1480px";}
+          if (l==3) {i.style.left = "-2220px";}
+          if (l==4) {i.style.left = "-2960px";}
+          if (l>4) {l=4;}
+        }
+      }
+    </script> -->
+</body>
+</html>

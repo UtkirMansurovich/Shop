@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media(min-width:880px){
+    .close, .menu, .banner{
+        display: none;
+    }
+    .Navbar{
+        width: 100%;
+        margin: 0;
+        padding: 5px 6%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(160, 250, 175, 0.9);
+        position:fixed;
+        z-index: 5;
+        box-sizing: border-box;
+        box-shadow:0px 5px 15px rgb(72, 121, 76);
+        
+    }
+    .ul, .ul .language{
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    .ul li{
+        margin-left: 20px;
+    }
+    .ul li a, .Uzb{
+        text-decoration: none;
+        color: rgb(72, 121, 76);
+        font-family: sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .language img{
+        margin: 0px 20px 0px 30px;
+    }
+    .Bizhaqidamalumot-img{
+        width: 80%;
+        margin: auto;
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .Bizhaqidamalumot{
+        width: 55%;
+    }
+    .Bizhaqidaimg{
+        width: 400px;
+        height: 270px;
+        margin-left: 50px;
+        background: url(Photo/pharmimg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .Yangilikimg{
+        width: 70%;
+        margin: auto;
+    }
+    .UzbRusEng{
+        top: 50px;
+        margin-left: 70px;
+    }
+}
+.UzbRusEng{
+    position: absolute; 
+    width: 70px;
+    height: 80px;
+    padding: 5px 0px;
+    text-align: center;
+    background-color: white;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    box-shadow:0px 5px 15px rgb(72, 121, 76);
+    transform: rotateY(-90deg);
+    transition: .5s ease;
+}
+.active{
+    transform: rotateY(0deg);
+}
+.UzbRusEng a:hover{
+    background-color: rgba(160, 250, 175, 0.9);
+}
+
+@media(max-width:880px){
+    .Navbar{
+        width: 100%;
+        padding: 5px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(160, 250, 175, 0.9);
+        position: fixed;
+        z-index: 5;
+        box-sizing: border-box;
+        box-shadow:0px 5px 15px rgb(72, 121, 76);
+    }
+    .banner{
+        width: 100%;
+        height: 80vh;
+        background: url(Photo/img5.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #carouselExampleIndicators{
+        display: none;
+    }
+    .UzbRusEng{
+        position: absolute; 
+        width: 60px;
+        padding: 5px;
+        text-align: center;
+        background-color: #ffffff;
+        line-height: normal;
+        box-shadow:0px 5px 15px rgb(28, 48, 29);
+    }
+    .ul{
+        position: absolute;
+        z-index: 11;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(72, 121, 76);
+        transform: translateY(-100%);
+        transition: 0.5s ease;
+        position: fixed;
+    }
+    .ul li{
+        list-style: none;
+        text-align: center;
+        line-height: 60px;
+    }
+    .ul li a, .Uzb{
+        text-decoration: none;
+        color: white;
+        font-family: sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .ul .language{
+        display: flex;
+        justify-content: center;
+    }
+    .language img{
+        margin-right:15px ;
+    }
+    
+    .menu img, .close img{
+        cursor: pointer;
+    }
+    .close{
+        margin-left: 75%;
+        
+    }
+    .open{
+        transform: translateX(0);
+    }
+    .UzbRusEng{
+        margin-top: 120px;
+        margin-left: 60px;
+        padding: 5px 0px;
+    }
+    .language{
+        display: flex;
+        align-items: center;
+    }
+    .Bizhaqidamalumot-img{
+        width: 90%;
+        margin: auto;
+    }
+    .Bizhaqidaimg{
+        margin: auto;
+        width: 100%;
+        min-height: 350px;
+        background: url(Photo/pharmimg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .Bizhaqidamalumot{
+        margin-top: 35px;
+    }
+    .Yangilikimg{
+        width: 95%;
+        margin: auto;
+    }
+}
+.Uzb{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.UzbRusEng a{
+    color: rgb(40, 71, 43);
+}
+.carousel-inner{
+    position: relative;
+    z-index:-2;
+    top: 0;
+}
+.Bizhaqimizda h1,.Mahsulotlar h1{
+    text-align: center;
+    margin: 40px 0px 30px 0px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(40, 71, 43);
+}
+.Yangiliklar h1{
+    text-align: center;
+    padding: 40px 0px 30px 0px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+.Bizhaqimizda h1::before, .Mahsulotlar h1::before, 
+.Yangiliklar h1::before{
+    position: absolute;
+    z-index: 2;
+    content: '';
+    width: 80px;
+    height: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    background: orange;
+}
+.Yangilikimg img{
+    width: 100%;
+    padding-bottom: 50px;
+}
+.Bizhaqidamalumot{
+    text-align: justify;
+}
+#SectionTwo{
+    width: 100%;
+    height: 100%;
+    background: url(Photo/bg1.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+.opacity{
+    width: 100%;
+    height: 100%;
+    background: rgba(35, 73, 39, 0.603);
+}
+.sirop{
+    margin: 15px;
+}
+.sirop img{
+    width: 250px;
+}
+#SectionThree{
+    margin: 50px 10px;
+}
+
+.sirop button{
+    width: 120px;
+    height: 30px;
+    border: 2px solid rgb(40, 71, 43);
+    color: rgb(40, 71, 43);
+    background: transparent;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: .4s ease;
+    margin-bottom: 10px;
+}
+.sirop button:hover{
+    background: rgb(40, 71, 43);
+    color: white;
+}
+.Mahsulot-malumot{
+    display: flex;
+    overflow-x: scroll;
+}
+.ventrikul-container,.pastula-container,.fortic-container,.bon-container,.hilorem-container,
+.bon1-container,.tassmis-container,.nefrokon-container,.neyrotrop-container,.sangius-container,
+.simver-container,.revertar-container,.sanus-container,.gayter-container{
+    position: absolute;
+    z-index: 12;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(236, 255, 228, 0.9);
+    transform: translate(100%);
+}
+.ventrikul,.tassmis,.nefrokon,.neyrotrop,.sangius,.fortic,.hilorem,.simver,.revertar,
+.sanus,.gayter,.pastula,.bon,.bon1{
+    padding: 2% 3%;
+    width: 80%;
+    height: 80vh;
+    background-color: white;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 20px;
+    box-shadow: 6px 6px 12px rgba(77, 75, 75, 0.884);
+    overflow-y: scroll;
+    text-align: justify;
+}
+@media(min-width:995px){
+    #footer{
+        display: flex;
+    }
+    .footerOne,.footerTwo,.footerThree{
+        width: 30%;
+        margin: 0px 25px;
+    }
+}
+@media(max-width:995px){
+    #footer hr{
+        width: 80%;
+        margin: auto;
+    }
+    .footerOne,.footerThree{
+        width: 80%;
+        margin: auto;
+        text-align: start;
+    }
+    .footerTwo{
+        width: 95%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #footer hr{
+        width: 100%;
+    }
+}
+.footerThree h3{
+    margin: 15px 0px;
+    font-size: 20px;
+}
+#footer p{
+    font-size: 14px;
+}
+#footer{
+    width: 100%;
+    margin: 0;
+    padding: 40px 25px;
+    background-color: rgb(40, 71, 43);
+    align-items: center;
+    color: white;
+}
+#footer hr{
+    border-top: 2px solid lightgray;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+    padding-left: 5px;
+}
+#footer a:hover{
+    text-decoration: underline;
+}
+.footer-img-p{
+    display: flex;
+    align-items: center;
+}
+.footer-img-p p{
+    padding-left: 7px;
+}
+.footerOne img{
+    transition: .3s ease;
+}
+.footerOne img:hover{
+    transform: scale(1.3);
+}
+.©{
+    width: 100%;
+    height: 90px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px ;
+    background-color:rgb(40, 71, 43) ;
+    color: white;
+}
